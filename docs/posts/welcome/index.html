@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2023-12-02">
+<meta name="author" content="Sandhya Vinukonda">
+<meta name="dcterms.date" content="2023-12-06">
 
-<title>Blog101 - Welcome To My Blog</title>
+<title>Blog101 - Blog 4 : Classification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
+      <h1 class="title">Blog 4 : Classification</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">ML</div>
               </div>
                   </div>
   </div>
@@ -121,14 +121,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Sandhya Vinukonda </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 2, 2023</p>
+        <p class="date">December 6, 2023</p>
       </div>
     </div>
     
@@ -146,9 +146,45 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<p>What does Classification do ?</p>
+<p>The primary objective in supervised learning is to teach the model to predict the correct label or outcome for a given input. The model learns patterns and relationships in the training data, associating specific features with their corresponding labels.The training process involves exposing the model to the labeled training data, allowing it to adjust its internal parameters to make accurate predictions. Once trained, the model is then tested on new, unseen data (test data) to evaluate its generalization capabilities.The effectiveness of the supervised learning method is assessed by measuring its accuracy on the test data. Accuracy is calculated by comparing the model’s predictions with the actual labels in the test set. This provides insights into how well the model performs on previously unseen examples.</p>
+<p>Picture 1</p>
+<p>In supervised learning, where we already know the correct answers, there are two main flavors: classification and regression. The key factor in deciding which one to use is the nature of the label data. If your label data consists of continuous values, then it’s a regression task. Take predicting house prices as an example – here, the goal is to estimate a continuous value based on features like square footage, location, and the number of bedrooms.On the flip side, if your task involves predicting categorical outcomes, like whether a student will be accepted into a specific university or not, then it’s a classification problem. In this scenario, the label data has distinct categories (admitted or not admitted), making it suitable for a classification approach.So, whether you’re dealing with predicting prices or university admissions, understanding if your label data is continuous or categorical guides you in choosing between regression and classification for your supervised learning journey.</p>
+<p>Eager Learners: Eager learners proactively build a model from a training dataset before making predictions. They invest more time during the training process to generalize better by learning the weights and relationships within the data. Once the model is trained, making predictions is relatively quicker. Examples: Logistic Regression: A widely-used algorithm for binary and multiclass classification. It models the probability of a certain class. Support Vector Machine (SVM): Efficiently classifies data points by finding the optimal hyperplane that separates different classes. Decision Trees: Tree-like models that make decisions based on features at each node, suitable for classification and regression. Artificial Neural Networks (ANN): Complex models inspired by the human brain, composed of interconnected nodes that process information in layers.</p>
+<p>Lazy Learners (Instance-Based Learners): Characteristics:</p>
+<p>Lazy learners don’t construct a model immediately; they memorize the training data. During prediction, they dynamically search for the nearest neighbor from the entire training dataset. This approach can be slower during prediction but adapts well to changes in the dataset. Examples:</p>
+<p>K-Nearest Neighbor (KNN): Classifies data points based on the majority class of their k-nearest neighbors. Case-Based Reasoning: Makes predictions based on past cases, comparing the current problem to previously solved ones. Understanding these distinctions helps in choosing the right algorithm based on the characteristics of the dataset and the specific requirements of the problem at hand. Eager and lazy learners offer different trade-offs in terms of training time, prediction speed, and adaptability to changes in the dataset.</p>
+<p>Picture 2</p>
+<p>Types of Classifications : 1. Binary : 0/1, spam and not spam, yes and no, negative and positive. Example : (long) 2. Multi-class classification Example (one-vs-rest and one-vs-one) 3. Multi-label classification 4. Imbalanced classification</p>
+<p>Let’s get to coding!</p>
+<p>Classification takes place when the target variable is discrete. When a target variable isn’t discrete, then regression takes place for the continuous varible.</p>
+<p>Types of classification in ML :</p>
+<p>Let’s Start Coding</p>
+<p>Picture 3</p>
+<p>Let’s look at a Machine Learning code example that shows binary classification of Blood Transfusion Service Centre.</p>
+<p>Before we start coding let’s download the data and understand it. Go to link : https://archive.ics.uci.edu/dataset/176/blood+transfusion+service+center and click on download. About Data : This study focuses on the critical role of blood transfusions in saving lives, addressing the challenges of maintaining an adequate blood supply for medical needs. The research employs the RFMTC marketing model, a modified version of RFM, using the donor database of the Blood Transfusion Service Center in Hsin-Chu City, Taiwan. The study randomly selects 748 donors and gathers data on Recency, Frequency, Monetary contribution, Time, and a binary variable indicating blood donation in March 2007. This dataset forms the basis for building an RFMTC model to enhance understanding and prediction in blood donation patterns.</p>
+<p>Let’s start coding : 1. Import Libraries</p>
+<p>code</p>
+<ol start="2" type="1">
+<li>Read data and clean it</li>
+</ol>
+<p>code</p>
+<ol start="3" type="1">
+<li>Visualization of the data</li>
+</ol>
+<p>code</p>
+<ol start="4" type="1">
+<li>Splitting data into train and test</li>
+</ol>
+<p>code</p>
+<ol start="5" type="1">
+<li>Model : Logistic Regression</li>
+</ol>
+<p>code</p>
+<ol start="6" type="1">
+<li>Evaluate the model</li>
+</ol>
+<p>code</p>
 
 
 

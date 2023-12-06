@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2023-12-05">
+<meta name="author" content="Sandhya Vinukonda">
+<meta name="dcterms.date" content="2023-12-06">
 
-<title>Blog101 - Post With Code</title>
+<title>Blog101 - Blog 3 : Clustering</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,11 +108,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Blog 3 : Clustering</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">ML</div>
               </div>
                   </div>
   </div>
@@ -123,14 +121,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Sandhya Vinukonda </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 5, 2023</p>
+        <p class="date">December 6, 2023</p>
       </div>
     </div>
     
@@ -148,7 +146,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is a post with executable code.</p>
+<p>Let’s talk about a fascinating part of machine learning and unsupervised learning. In this world, there’s a standout technique known as clustering, where we work with data that doesn’t come pre-labeled. Instead, we group similar data points into clusters based on common traits or patterns. This blog will take you through the basics of clustering, its types, and zoom in on two popular clustering buddies: K Means and Hierarchical Clustering.</p>
+<p>Understanding Clustering:</p>
+<p>Clustering is like a detective trying to find hidden connections in a bunch of clues (data points). The cool thing is, no one is telling the detective what to look for – the algorithm figures it out on its own.</p>
+<p>Types of Clustering:</p>
+<p>Hard Clustering:</p>
+<p>Imagine putting each data point into one exclusive group. That’s hard clustering for you. Classic example: K Means.</p>
+<p>Soft Clustering:</p>
+<p>Now, think of data points being chill and belonging to multiple groups with varying levels of closeness. That’s soft clustering. Fuzzy C-Means is a soft clustering star.</p>
+<p>Different Clustering Models:</p>
+<p>Picture 1</p>
+<p>Connectivity Models: These algorithms look at how close data points are to each other. Example: Hierarchical Clustering.</p>
+<p>Centroid Models: These focus on the center points of clusters. K Means is a big player here.</p>
+<p>Distribution Models: Assume that data points follow a common pattern. Think of Gaussian Mixture Models (GMM).</p>
+<p>Density Models: These spot clusters based on where data points crowd up. A famous one is DBSCAN.</p>
+<p>Prominent Clustering Algorithms: K Means Clustering: It’s like dividing data into clubs based on the average characteristics of each group. Simple and efficient – a go-to for many.</p>
+<p>Hierarchical Clustering: This one builds a family tree of clusters, like tracing your ancestry. It’s cool because it allows for nested or overlapping groups.</p>
+<p>Difference Between K Means and Hierarchical Clustering: Here’s the lowdown on how K Means and Hierarchical Clustering differ:</p>
+<p>Nature of Clusters: K Means makes clear-cut groups with no sharing allowed. Hierarchical Clustering creates a family tree where groups can overlap or nest.</p>
+<p>Number of Clusters: K Means needs to know how many groups you want before it starts. Hierarchical Clustering is more flexible – it generates a tree, and you can decide how many groups later.</p>
+<p>Computation Complexity: K Means is quicker with the calculations, good for big datasets. Hierarchical Clustering can take more time, especially with lots of data. Conclusion: In the unsupervised learning world, clustering is like a superhero revealing hidden patterns in data without anyone giving it a roadmap. Knowing the ins and outs of clustering, the different types, and the quirks of K Means and Hierarchical Clustering gives you a powerful toolkit for finding the stories hidden in your data. As technology races forward, the possibilities for unsupervised learning and clustering are endless, promising discoveries in fields from healthcare to finance.</p>
+<p>Let’s Start Coding</p>
+<ol type="1">
+<li><p>Import Libraries</p></li>
+<li><p>Read data and clean it</p></li>
+<li><p>Model : K Means</p></li>
+</ol>
 
 
 
