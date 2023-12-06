@@ -12,6 +12,8 @@ Understanding Clustering:
 
 Clustering is like a detective trying to find hidden connections in a bunch of clues (data points). The cool thing is, no one is telling the detective what to look for – the algorithm figures it out on its own.
 
+![](Clustering_Soft_Hard.png)
+
 Types of Clustering:
 
 Hard Clustering:
@@ -26,7 +28,7 @@ Fuzzy C-Means is a soft clustering star.
 
 Different Clustering Models:
  
- Picture 1 
+ ![](Clustering_models.png)
 
 Connectivity Models:
 These algorithms look at how close data points are to each other.
@@ -71,6 +73,8 @@ Conclusion:
 In the unsupervised learning world, clustering is like a superhero revealing hidden patterns in data without anyone giving it a roadmap. Knowing the ins and outs of clustering, the different types, and the quirks of K Means and Hierarchical Clustering gives you a powerful toolkit for finding the stories hidden in your data. As technology races forward, the possibilities for unsupervised learning and clustering are endless, promising discoveries in fields from healthcare to finance.
 
 Let’s Start Coding 
+
+![](KMeans_StepsOfCode.png)
 
 1. Import Libraries 
 

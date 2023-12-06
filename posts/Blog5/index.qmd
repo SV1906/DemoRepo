@@ -11,10 +11,12 @@ In the intricate landscape of data analysis, outliers emerge as the unconvention
 The Significance of Outlier Detection:
 
 Think of outlier detection as playing detective with our dataset. During the crucial phases of cleaning and preprocessing, where we address missing values and pinpoint outliers, it's imperative to contextualize our actions. The decision to remove outliers should be influenced by the specific use case, as blindly discarding data points may not always align with the broader objectives. The ultimate aim is to bolster our model's performance when faced with new or unseen data.
-IMAGE 
+![](Outliers.png)
 
 Strategies for Outlier Detection:
-IMAGE 
+
+![](Outliers_Detection.png)
+ 
 
 1. Using Standard Deviation:
 An approach grounded in setting limits based on standard deviations.
@@ -36,6 +38,12 @@ The concept of the Interquartile Range (IQR) is used to build the boxplot graphs
 
 Focused on the central 50% of data.
 Outliers are identified outside the range[q25−1.5×IQR,q75+1.5×IQR]
+
+![](Outliers_Boxplot.png)
+https://www.kdnuggets.com/2019/11/understanding-boxplots.html
+
+
+
 4. Using Percentile:Leveraging percentiles to isolate outliers outside the interquartile range.Outliers are discarded if they stray beyond the confines of [q25−1.5×IQR,q75+1.5×IQR].
 In the intricate dance of data analysis, the ability to detect and navigate outliers is akin to mastering a subtle art. Employing techniques such as standard deviation, z-score, IQR, and percentiles empowers us to pinpoint and manage anomalies with finesse. The choice of method is nuanced, guided by the unique characteristics of the dataset and the specific demands of the analysis. By embracing the challenge of outlier detection, we fortify our data's integrity, ensuring it stands resilient and poised for insightful revelations.
 More Content:
@@ -79,8 +87,7 @@ Download the dataset from : https://www.kaggle.com/datasets/spscientist/students
 2. Read the dataset 
 3. Standard deviation 
 4. Visualization 
-5. 
-6. 
+
 
 
 
