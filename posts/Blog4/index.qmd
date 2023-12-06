@@ -2,7 +2,7 @@
 title: "Blog 4 : Classification "
 author: "Sandhya Vinukonda"
 date: "2023-12-06"
-categories: [ML]
+categories: [Machine Learning, Supervised Learning]
 # jupyter: python3
 ---
 

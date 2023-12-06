@@ -2,7 +2,7 @@
 title: "Blog 3 :  Linear and nonlinear regression "
 author: "Sandhya Vinukonda"
 date: "2023-12-06"
-categories: [ML]
+categories: [Machine Learning, Regression Analysis]
 # jupyter: python3
 ---
 

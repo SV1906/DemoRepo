@@ -2,7 +2,7 @@
 title: "Blog 2 : Clustering "
 author: "Sandhya Vinukonda"
 date: "2023-12-06"
-categories: [ML]
+categories: [Machine Learning, Unsupervised Learning]
 # jupyter: python3
 ---
 
