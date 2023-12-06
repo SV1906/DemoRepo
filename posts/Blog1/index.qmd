@@ -6,6 +6,8 @@ categories: [Probability,Statistics]
 # jupyter: python3
 ---
 
+![](image.jpg) 
+
 In the intricate landscape of data analysis, outliers emerge as the unconventional elements that refuse to conform. These peculiar data points, standing out from the crowd, can introduce significant distortions to the overall dataset. Whether stemming from errors, inconsistencies, or simply unique observations, managing outliers becomes a pivotal step in the process of data cleaning and preprocessing. This careful curation ensures that our analytical endeavors are built upon trustworthy and representative data.
 
 The Significance of Outlier Detection:
